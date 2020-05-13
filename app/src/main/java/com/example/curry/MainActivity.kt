@@ -1,5 +1,6 @@
 package com.example.curry
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -28,23 +29,23 @@ class MainActivity : AppCompatActivity() {
         verbTextView.text=verb[Random().nextInt(4)]
 
         if (verbTextView.text == "よそいたい人生だった…"){
-            verbTextView.textSize= 36F
+            verbTextView.setTextSize(36F)
         }else{
-            verbTextView.textSize= 14F
+            verbTextView.setTextSize(14F)
         }
 
         when(nameTextView.text){
             "てぃらの"-> {
-                nameTextView.textColors = "#FFCA1313"
+                nameTextView.setTextColor(Color.parseColor("#FFCA1313"))
             }
             "ぱきけふぁろ"->{
-                nameTextView.textColors = "#FFCA6513"
+                nameTextView.setTextColor(Color.parseColor("#FFCA6513"))
             }
             "とりけら"->{
-                nameTextView.textColors = "#FF6FCA13"
+                nameTextView.setTextColor(Color.parseColor("#FF6FCA13"))
             }
             "ぷてらの"->{
-                nameTextView.textColors = "#FF934B18"
+                nameTextView.setTextColor(Color.parseColor("##FF934B18"))
 
             }
 
