@@ -65,13 +65,15 @@
                     android:id="@+id/nameTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="名前" />
+                    android:text="名前"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/foodTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="食べ物" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -91,6 +93,7 @@
                     android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="serveFood"
                     android:text="Button" />
             </LinearLayout>
         </LinearLayout>
